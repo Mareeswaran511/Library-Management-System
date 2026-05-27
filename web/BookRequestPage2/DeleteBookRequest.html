@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete Book Request</title>
+
+<style>
+body{
+    font-family: Arial;
+    background: linear-gradient(to right,#dbeafe,#f3f4f6);
+    margin:0;
+}
+
+.header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.container{
+    width:40%;
+    margin:80px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    color:#1e3a8a;
+}
+
+label{
+    font-weight:bold;
+}
+
+input[type="text"]{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+/* BUTTON BASE */
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+    font-size:16px;
+    text-decoration:none;
+    color:white;
+    margin:5px;
+}
+
+/* DELETE BUTTON */
+.btn-delete{
+    background:red;
+}
+
+.btn-delete:hover{
+    background:darkred;
+}
+
+/* BACK BUTTON */
+.btn-back{
+    background:#4b5563;
+}
+
+.btn-back:hover{
+    background:#374151;
+}
+
+/* BUTTON ROW */
+.button-group{
+    text-align:center;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">Library Management System</div>
+
+<div class="container">
+
+<h2>Delete Book Request</h2>
+
+<form action="DeleteBookRequest.jsp" method="post">
+
+    <label>Request ID</label>
+    <input type="text" name="request_id" required>
+
+    <div class="button-group">
+        <input type="submit" value="Delete" class="btn btn-delete">
+
+        <a href="../HomePage2.html" class="btn btn-back">Back</a>
+    </div>
+
+</form>
+
+</div>
+
+</body>
+</html>

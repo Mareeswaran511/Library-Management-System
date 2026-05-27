@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delete Member</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(to right,#dbeafe,#f3f4f6);
+margin:0;
+}
+
+.header{
+background:#1e3a8a;
+color:white;
+padding:20px;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+}
+
+.container{
+width:450px;
+margin:60px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0px 5px 15px rgba(0,0,0,.2);
+}
+
+h2{
+text-align:center;
+color:#1e3a8a;
+margin-bottom:20px;
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-bottom:8px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.button-group{
+display:flex;
+gap:12px;
+}
+
+.btn,
+.back-btn{
+flex:1;
+height:48px;
+border:none;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+text-decoration:none;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.btn{
+background:#1e3a8a;
+color:white;
+}
+
+.btn:hover{
+background:#2563eb;
+}
+
+.back-btn{
+background:#6b7280;
+color:white;
+}
+
+.back-btn:hover{
+background:#4b5563;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Library Management System
+</div>
+
+<div class="container">
+
+<h2>Delete Member</h2>
+
+<form action="DeleteMemberPage.jsp" method="post">
+
+<label>Member ID</label>
+
+<input type="text"
+name="memberid"
+placeholder="ML001"
+required>
+
+<div class="button-group">
+
+<a href="../MemberPage.html"
+class="back-btn">
+Back
+</a>
+
+<input type="submit"
+value="Delete Member"
+class="btn">
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

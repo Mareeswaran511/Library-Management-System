@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Book</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#dbeafe,#f3f4f6);
+}
+
+.header{
+    background:#1e3a8a;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.container{
+    width:450px;
+    margin:60px auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#1e3a8a;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.button-group{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.back-btn{
+    width:40%;
+    background:#6b7280;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:12px;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.back-btn:hover{
+    background:#4b5563;
+}
+
+.btn{
+    width:60%;
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    Library Management System
+</div>
+
+<div class="container">
+
+<h2>Add Book</h2>
+
+<form action="AddBook.jsp" method="post">
+
+<div class="input-group">
+<label>Book Title</label>
+<input type="text" name="text1" required>
+</div>
+
+<div class="input-group">
+<label>Author</label>
+<input type="text" name="text2" required>
+</div>
+
+<div class="input-group">
+<label>Genre</label>
+<input type="text" name="text3" required>
+</div>
+
+<div class="input-group">
+<label>Status</label>
+
+<select name="text4">
+    <option value="Available">Available</option>
+    <option value="Issued">Issued</option>
+</select>
+
+</div>
+
+<div class="button-group">
+
+<a href="../BookPage.html" class="back-btn">
+Back
+</a>
+
+<input type="submit" value="Add Book" class="btn">
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

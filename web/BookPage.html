@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Section</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#e5e7eb;
+min-height:100vh;
+}
+
+.header{
+background:#1e3a8a;
+color:white;
+padding:18px;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+box-shadow:0px 3px 10px rgba(0,0,0,.3);
+}
+
+.banner{
+position:relative;
+width:100%;
+height:400px;
+overflow:hidden;
+}
+
+.banner img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.overlay h1{
+color:white;
+font-size:45px;
+font-weight:bold;
+margin-bottom:15px;
+text-shadow:2px 2px 8px rgba(0,0,0,.8);
+}
+
+.overlay p{
+color:#f8fafc;
+font-size:20px;
+font-weight:500;
+text-shadow:1px 1px 6px rgba(0,0,0,.8);
+}
+
+.container{
+width:85%;
+margin:40px auto;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:12px;
+text-decoration:none;
+text-align:center;
+color:#1e3a8a;
+box-shadow:0px 4px 10px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.box:hover{
+background:#1e3a8a;
+color:white;
+transform:translateY(-5px);
+}
+
+.icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.title{
+font-size:20px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.desc{
+font-size:14px;
+line-height:1.5;
+}
+
+/* Back Button */
+
+.back-container{
+text-align:center;
+margin-bottom:40px;
+}
+
+.back-btn{
+display:inline-block;
+padding:12px 30px;
+background:#6b7280;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+transition:.3s;
+}
+
+.back-btn:hover{
+background:#4b5563;
+transform:translateY(-3px);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Library Management System
+</div>
+
+<div class="banner">
+
+<img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da"
+alt="Library Books">
+
+<div class="overlay">
+
+<h1>Book Management</h1>
+
+<p>
+Manage and organize library book records efficiently
+</p>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="menu">
+
+<a href="BookPage/ShowBook.jsp" class="box">
+<div class="icon">📖</div>
+<div class="title">Show Books</div>
+<div class="desc">View all available books</div>
+</a>
+
+<a href="BookPage/AddBook.html" class="box">
+<div class="icon">➕</div>
+<div class="title">Add Book</div>
+<div class="desc">Insert new books into library</div>
+</a>
+
+<a href="BookPage/UpdateBook.html" class="box">
+<div class="icon">✏️</div>
+<div class="title">Update Book</div>
+<div class="desc">Modify existing book details</div>
+</a>
+
+<a href="BookPage/DeleteBook.html" class="box">
+<div class="icon">🗑️</div>
+<div class="title">Delete Book</div>
+<div class="desc">Remove books from records</div>
+</a>
+
+<a href="BookPage/SearchBook.html" class="box">
+<div class="icon">🔍</div>
+<div class="title">Search Book</div>
+<div class="desc">Find books quickly</div>
+</a>
+
+</div>
+
+</div>
+
+<div class="back-container">
+
+<a href="HomePage.html" class="back-btn">
+← Back To Home
+</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>User Home Page</title>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+
+margin:0;
+padding:0;
+
+font-family:Arial,sans-serif;
+
+background-image:url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+h1{
+
+text-align:center;
+
+background-color:rgba(30,144,255,0.9);
+
+color:white;
+
+padding:15px;
+
+margin:0;
+}
+
+.subtitle{
+
+text-align:center;
+
+color:white;
+
+font-size:18px;
+
+margin-top:10px;
+
+font-weight:bold;
+}
+
+.container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+width:90%;
+
+margin:30px auto;
+}
+
+.section{
+
+background-color:rgba(255,255,255,0.92);
+
+padding:20px;
+
+border-radius:12px;
+
+box-shadow:0px 0px 10px gray;
+}
+
+h2{
+
+color:#1E90FF;
+}
+
+a{
+
+text-decoration:none;
+
+color:#1E90FF;
+
+font-weight:bold;
+}
+
+a:hover{
+
+color:red;
+}
+
+.logout{
+
+text-align:center;
+
+margin:30px;
+}
+
+.logout a{
+
+background-color:#1E90FF;
+
+padding:10px 20px;
+
+color:white;
+
+border-radius:5px;
+}
+
+.logout a:hover{
+
+background-color:#0b6bc9;
+
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>User Dashboard</h1>
+
+<p class="subtitle">
+Welcome to Library Management System
+</p>
+
+
+<div class="container">
+
+<div class="section">
+
+<h2>📚 Book Section</h2>
+
+View All Books :
+<a href="BookPage2/ShowBook.jsp">
+Show Books
+</a>
+
+<br><br>
+
+Search Book :
+<a href="BookPage2/SearchBook.html">
+Search Book
+</a>
+
+</div>
+
+
+<div class="section">
+
+<h2>👤 Member Section</h2>
+
+View Members :
+<a href="MemberPage2/ShowMemberPage.jsp">
+Show Members
+</a>
+
+<br><br>
+
+Search Member :
+<a href="MemberPage2/SearchMemberPage.html">
+Search Member
+</a>
+
+</div>
+
+
+<div class="section">
+
+<h2>📝 Feedback Section</h2>
+
+Add Feedback :
+<a href="FeedbackPage2/AddFeedbackPage.html">
+Add Feedback
+</a>
+
+<br><br>
+
+Update Feedback :
+<a href="FeedbackPage2/UpdateFeedbackPage.html">
+Update Feedback
+</a>
+
+<br><br>
+
+Delete Feedback :
+<a href="FeedbackPage2/DeleteFeedbackPage.html">
+Delete Feedback
+</a>
+
+</div>
+
+
+<div class="section">
+
+<h2>📖 Book Request Section</h2>
+
+Add Request :
+<a href="BookRequestPage2/AddBookRequest.html">
+Add Request
+</a>
+
+<br><br>
+
+Update Request :
+<a href="BookRequestPage2/UpdateBookRequest.html">
+Update Request
+</a>
+
+<br><br>
+
+Delete Request :
+<a href="BookRequestPage2/DeleteBookRequest.html">
+Delete Request
+</a>
+
+</div>
+
+</div>
+
+
+<div class="logout">
+
+<a href="index.html">
+Logout
+</a>
+
+</div>
+
+</body>
+</html>

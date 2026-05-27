@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Request Section</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#e5e7eb;
+min-height:100vh;
+}
+
+.header{
+background:#1e3a8a;
+color:white;
+padding:18px;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+box-shadow:0px 3px 10px rgba(0,0,0,.3);
+}
+
+.banner{
+position:relative;
+width:100%;
+height:400px;
+overflow:hidden;
+}
+
+.banner img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.overlay h1{
+color:white;
+font-size:45px;
+font-weight:bold;
+margin-bottom:15px;
+text-shadow:2px 2px 8px rgba(0,0,0,.8);
+}
+
+.overlay p{
+color:#f8fafc;
+font-size:20px;
+font-weight:500;
+text-shadow:1px 1px 6px rgba(0,0,0,.8);
+}
+
+.container{
+width:85%;
+margin:40px auto;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:12px;
+text-decoration:none;
+text-align:center;
+color:#1e3a8a;
+box-shadow:0px 4px 10px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.box:hover{
+background:#1e3a8a;
+color:white;
+transform:translateY(-5px);
+}
+
+.icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.title{
+font-size:20px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.desc{
+font-size:14px;
+line-height:1.5;
+}
+
+.back-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:10%;
+height:48px;
+background:#6b7280;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+transition:.3s;
+}
+
+.back-btn:hover{
+background:#4b5563;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Library Management System
+</div>
+
+<div class="banner">
+
+<img src="images/bookrequest.png"
+alt="Book Request Banner">
+
+<div class="overlay">
+
+<h1>Request Management</h1>
+
+<p>
+Manage and track book requests efficiently
+</p>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="menu">
+
+<a href="BookRequestPage/ShowBookRequest.jsp" class="box">
+
+<div class="icon">📖</div>
+
+<div class="title">
+Show Requests
+</div>
+
+<div class="desc">
+View all request records
+</div>
+
+</a>
+
+
+<a href="BookRequestPage/AddBookRequest.html" class="box">
+
+<div class="icon">➕</div>
+
+<div class="title">
+Add Request
+</div>
+
+<div class="desc">
+Create new book requests
+</div>
+
+</a>
+
+
+<a href="BookRequestPage/UpdateBookRequest.html" class="box">
+
+<div class="icon">✏️</div>
+
+<div class="title">
+Update Request
+</div>
+
+<div class="desc">
+Modify request details
+</div>
+
+</a>
+
+
+<a href="BookRequestPage/DeleteBookRequest.html" class="box">
+
+<div class="icon">🗑️</div>
+
+<div class="title">
+Delete Request
+</div>
+
+<div class="desc">
+Remove request records
+</div>
+
+</a>
+
+
+<a href="BookRequestPage/SearchBookRequest.html" class="box">
+
+<div class="icon">🔍</div>
+
+<div class="title">
+Search Request
+</div>
+
+<div class="desc">
+Find requests quickly
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+<center>
+  <a href="/LibraryManagement/HomePage.html" class="back-btn">
+← Back To Home
+</a>
+</center>
+</body>
+</html>

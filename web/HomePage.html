@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        /* BACKGROUND IMAGE + OVERLAY */
+        body{
+            min-height:100vh;
+            background: 
+            linear-gradient(rgba(219,234,254,0.85), rgba(243,244,246,0.85)),
+            url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center center fixed;
+            background-size: cover;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* HEADER */
+        .header{
+            background: linear-gradient(90deg,#1e3a8a,#2563eb);
+            color:white;
+            padding:20px;
+            text-align:center;
+            font-size:30px;
+            font-weight:600;
+            letter-spacing:1px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* GRID */
+        .container{
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:30px;
+            padding:50px;
+            max-width:900px;
+            margin:auto;
+        }
+
+        /* CARD */
+        .section{
+            position:relative;
+            height:240px;
+            border-radius:18px;
+            overflow:hidden;
+            box-shadow:0 8px 20px rgba(0,0,0,0.15);
+            transition:0.3s;
+        }
+
+        .section:hover{
+            transform:translateY(-8px);
+            box-shadow:0 12px 25px rgba(0,0,0,0.25);
+        }
+
+        /* IMAGE */
+        .section img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            filter:brightness(0.75);
+        }
+
+        /* TEXT OVERLAY */
+        .section a{
+            position:absolute;
+            bottom:0;
+            left:0;
+            width:100%;
+            padding:15px;
+            text-decoration:none;
+            color:white;
+            font-size:20px;
+            font-weight:600;
+            background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+        }
+
+        /* LOGOUT */
+        .logout{
+            text-align:center;
+            margin:30px;
+        }
+
+        .logout a{
+            background:#dc2626;
+            color:white;
+            padding:12px 30px;
+            border-radius:30px;
+            text-decoration:none;
+            font-weight:600;
+            transition:0.3s;
+            display:inline-block;
+        }
+
+        .logout a:hover{
+            background:#991b1b;
+            transform:scale(1.05);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            .container{
+                grid-template-columns:1fr;
+                padding:20px;
+            }
+            .header{
+                font-size:22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        📚 Library Management Dashboard
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da">
+            <a href="BookPage.html">📖 Book Section</a>
+        </div>
+
+        <div class="section">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+            <a href="MemberPage.html">👤 Member Section</a>
+        </div>
+
+        <div class="section">
+            <img src="images/bookrequest.png">
+            <a href="RequestPage.html">📑 Book Request</a>
+        </div>
+
+        <div class="section">
+            <img src="images/feedback.png">
+            <a href="FeedbackPage.html">💬 Feedback</a>
+        </div>
+    </div>
+
+    <div class="logout">
+        <a href="index.html">Logout</a>
+    </div>
+
+</body>
+</html>

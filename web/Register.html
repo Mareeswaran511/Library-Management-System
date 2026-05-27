@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Registration</title>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+
+margin:0;
+padding:0;
+
+font-family:Arial,sans-serif;
+
+background-image:url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da");
+
+background-size:cover;
+background-position:center;
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.register-container{
+
+width:400px;
+
+background:rgba(255,255,255,0.92);
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0px 0px 20px gray;
+}
+
+.library-icon{
+
+text-align:center;
+font-size:50px;
+}
+
+h1{
+
+text-align:center;
+margin-bottom:10px;
+}
+
+.subtitle{
+
+text-align:center;
+color:gray;
+margin-bottom:20px;
+}
+
+label{
+
+font-weight:bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+
+width:100%;
+
+padding:10px;
+
+margin-top:8px;
+margin-bottom:15px;
+
+border:1px solid gray;
+
+border-radius:5px;
+
+box-sizing:border-box;
+}
+
+.role{
+
+margin-top:10px;
+margin-bottom:20px;
+}
+
+input[type=submit]{
+
+width:100%;
+
+padding:12px;
+
+background-color:#2E8B57;
+
+color:white;
+
+border:none;
+
+border-radius:5px;
+
+font-size:16px;
+
+cursor:pointer;
+}
+
+input[type=submit]:hover{
+
+background-color:#1d6e43;
+}
+
+.login{
+
+text-align:center;
+margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<form action="RegisterProcess.jsp" method="post">
+
+<div class="register-container">
+
+<div class="library-icon">
+📚
+</div>
+
+<h1>Library Registration</h1>
+
+<p class="subtitle">
+Create your account
+</p>
+
+<label>Username</label>
+
+<input type="text"
+name="username"
+placeholder="Enter Username"
+required>
+
+<label>Email</label>
+
+<input type="email"
+name="email"
+placeholder="Enter Email"
+required>
+
+<label>Password</label>
+
+<input type="password"
+name="password"
+placeholder="Enter Password"
+required>
+
+<div class="role">
+
+<label>User Type:</label>
+
+<br><br>
+
+<input type="radio"
+name="role"
+value="Admin"
+required>
+
+Admin
+
+&nbsp;&nbsp;&nbsp;
+
+<input type="radio"
+name="role"
+value="User">
+
+User
+
+</div>
+
+<input type="submit"
+value="REGISTER">
+
+<div class="login">
+
+Already have an account?
+
+<a href="index.html">
+Login
+</a>
+
+</div>
+
+</div>
+
+</form>
+
+</body>
+</html>
